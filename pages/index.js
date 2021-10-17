@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 const Index = () => {
   const [url, setUrl] = useState("");
@@ -12,11 +13,8 @@ const Index = () => {
     setError(null);
     setData(null);
     // check if url is a valid youtube or instagram post url
-    if (
-      !url.match(/(http(s)?:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+/g) &&
-      !url.match(/(http(s)?:\/\/)?(www\.)?(instagram\.com|instagram\.com)\/.+/g)
-    ) {
-      setError("Please enter a valid youtube or instagram url");
+    if (!url.match(/(http(s)?:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+/g)) {
+      setError("Please enter a valid youtube url");
       setLoading(false);
       return;
     }
@@ -33,16 +31,22 @@ const Index = () => {
   };
   return (
     <div className="flex flex-col items-center">
-      <header className="p-4 w-full tracking-tight text-lg flex items-center justify-around">
+      <p className="p-2 bg-pink-600 text-white w-full text-center">
+        Instagram support coming soon!
+      </p>
+      <header className="p-4 bg-gray-100 w-full tracking-tight text-lg flex items-center justify-around">
         <p className="font-bold">All in one downloader 🔥</p>
-        <a href="/" className="underline">
+        <a
+          href="https://github.com/Manitej66/yt-insta-downloader"
+          className="underline"
+        >
           GitHub
         </a>
       </header>
       <hr className="w-full mb-3" />
       <h1 className="p-4 text-2xl tracking-tight text-center font-bold lg:text-4xl">
-        Download <span className="text-red-500">YouTube</span> &{" "}
-        <span className="text-pink-600">Instagram</span> posts at one place
+        Download <span className="text-red-500">YouTube</span> videos & shorts
+        at one place
       </h1>
       <main className="px-4 w-full">
         <input

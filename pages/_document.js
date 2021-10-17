@@ -6,6 +6,42 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <html lang="en" xmlLang="en" xmlns="http://www.w3.org/1999/xhtml">
+            <title>YouTube video & shorts Downloader</title>
+            {/* add twitter card images and meta images */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@PrataManitej" />
+            <meta name="twitter:creator" content="@PrataManitej" />
+            <meta
+              name="twitter:title"
+              content="YouTube video & shorts Downloader"
+            />
+            <meta
+              name="twitter:description"
+              content="Download YouTube videos and shorts"
+            />
+            <meta
+              name="twitter:image"
+              content="https://og-image.vercel.app/**YouTube%20video%20%26%20shorts%20downloader**.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg"
+            />
+            <meta
+              property="og:title"
+              content="YouTube video & shorts Downloader"
+            />
+            <meta property="og:description" content="Download YouTube videos" />
+            <meta
+              property="og:image"
+              content="https://og-image.vercel.app/**YouTube%20video%20%26%20shorts%20downloader**.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg"
+            />
+            <meta property="og:url" content="https://PrataManitej.com" />
+            <meta
+              property="og:site_name"
+              content="YouTube video & shorts Downloader"
+            />
+            <meta property="og:type" content="website" />
+            <meta
+              name="description"
+              content="Download YouTube videos and shorts"
+            />
             <meta charSet="UTF-8" />
             <meta name="google" content="notranslate" />
             <meta httpEquiv="Content-Language" content="en"></meta>
